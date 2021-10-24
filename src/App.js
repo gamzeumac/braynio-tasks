@@ -23,11 +23,11 @@ function App() {
       "https://api.fynbill.fynbird.io/oauth",
 
       {
-        username: process.env.REACT_APP_API_USERNAME,
+        username:  env.REACT_APP_API_USERNAME,
         password: env.PASSWORD,
-        client_id: process.env.REACT_APP_API_CLIENT_ID,
-        client_secret: process.env.REACT_APP_API_CLIENT_SECRET,
-        grant_type: process.env.REACT_APP_API_GRANT_TYPE,
+        client_id:  env.REACT_APP_API_CLIENT_ID,
+        client_secret: env.REACT_APP_API_CLIENT_SECRET,
+        grant_type:  env.REACT_APP_API_GRANT_TYPE,
       }
     )
     setToken(auth.data.access_token);
